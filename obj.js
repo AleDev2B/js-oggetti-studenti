@@ -35,16 +35,18 @@ var biciclette = [{
   tipologia:"city bike"
 }];
 
-var marcaDaAgg = prompt("ciao frenzo inserisci la marca della bici che hai comprato ;-)");
-var telaioDaAgg = prompt("di quale materiale è fatto il telaio?");
-var pesoDaAgg = parseInt(prompt("Oje, inserta un número coño"));
-var tipologDaAgg = prompt("che modello di bici è?")
+// var marcaDaAgg = prompt("ciao frenzo inserisci la marca della bici che hai comprato ;-)");
+// var telaioDaAgg = prompt("di quale materiale è fatto il telaio?");
+// var pesoDaAgg = parseInt(prompt("Oje, inserta un número coño"));
+// var tipologDaAgg = prompt("che modello di bici è?")
+
+//sto chiedendo di fare un push nell'array BICICLETTE che essendo costituito da diversi oggetti metterò tra parentesi graffe, attribuendo di volta in volta alla singola proprietà il valore inserito nel prompt
 
 biciclette.push({
-  marca:marcaDaAgg,
-  telaio:telaioDaAgg,
-  peso:pesoDaAgg,
-  tipologia:tipologDaAgg
+  marca:prompt("ciao frenzo inserisci la marca della bici"),
+  telaio:prompt("di quale materiale è fatto il telaio?"),
+  peso:parseInt(prompt("inserta un número coño")),
+  tipologia:prompt("che modello di bici è?")
 });
 
 for (var i = 0; i < biciclette.length; i++) {
